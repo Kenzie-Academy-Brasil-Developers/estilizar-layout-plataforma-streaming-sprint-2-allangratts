@@ -16,23 +16,129 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /* VARIÁVEIS */
 :root{
-  
+  --bg-color: #00002e;
 }
 
 /*BODY*/
-	body{
 
-	}
+html{
+	box-sizing: border-box;
+	
+}
+
+body{
+	background-color: var(--bg-color);
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #fff;
+	
+		
+}
 
 /*TOPO*/
 	header.topo{
 		
 	}
 
+	header h2 {
+		text-align: center;
+		margin: 20px 0px;
+		font-size: 2.2em;
+	}
+
+	.topo figure {
+		display: flex;
+		justify-content: center;
+	}
+
+	.topo img {
+		width: 50%;
+	}
+
+	figcaption {
+		display: none;
+	}
+
 /*RODAPÉ*/
 	
 
 /*PÁGINA INICIAL*/
-	div.pg-home{
-		
+div.pg-home {
+	
+	
+	
+}
+
+.pg-home img {
+	width: 80%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+li {
+	width: 186px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+	padding-top: 10px;
+	margin: 10px;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+}
+
+button{
+	padding: 10px 35px;
+    margin-top: 40px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+@media (min-width: 500px) {
+
+	header h2 {
+		text-align: center;
+		margin: 40px 0px;
+		font-size: 3.8em;
 	}
+	
+
+	ul {
+		width: 856px;
+		margin: 0px auto;
+	}
+
+
+	.topo figure {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.topo img {
+		width: 16%;
+	}
+
+	div.pg-home {
+		margin-top: 180px;
+	}
+
+
+	
+
+}
